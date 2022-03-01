@@ -58,6 +58,8 @@ function App() {
   }
   return (
     <main>
+
+      <div className="c"> Generate the Random You </div>
       <div className='block bcg-black'></div>
       <div className='block'>
         <div className='container'>
