@@ -9,12 +9,12 @@ import {
   FaLock,
 } from 'react-icons/fa'
 const url = 'https://randomuser.me/api/'
-const defaultImage = 'https://randomuser.me/api/portraits/men/75.jpg'
+const defaultImage = 'https://randomuser.me/api/portraits/men/85.jpg'
 function App() {
 const[loading,setLoading]=useState(true)
   const[person,setPerson]=useState(null)
 const [title,setTitle]=useState('name')
-const [value,setValue]=useState('random person')
+const [value,setValue]=useState()
 
   const handleValue=(e)=>{
     console.log(e.target)
@@ -24,6 +24,17 @@ const [value,setValue]=useState('random person')
     <div className="block ">
 <div className="container">
 <img src={(person && person.image) || defaultImage} alt="random user" className="user-img"/>
+<p className="user-title" > my {title} is </p>
+<p className="user-value" > my {value} is </p>
+  <div className="values-list">
+<button className="icon" data-label="name" onMouseOver={handleValue} > <FaUser /></button>
+
+  </div>
+  
+  
+
+
+  
 </div>
 
     </div>
