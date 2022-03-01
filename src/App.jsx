@@ -16,7 +16,9 @@ const[loading,setLoading]=useState(true)
 const [title,setTitle]=useState('name')
 const [value,setValue]=useState('random person')
 
-  
+  const handleValue=(e)=>{
+    console.log(e.target)
+  }
   return <h2>random user starter</h2>
 }
 
